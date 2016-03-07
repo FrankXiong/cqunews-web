@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<proxool-config>
+<proxool> 
+    <alias>cqunews</alias> 
+   	<driver-url><![CDATA[jdbc:mysql://127.0.0.1:3306/cqunews?characterEncoding=utf-8]]></driver-url> 
+    <driver-class>com.mysql.jdbc.Driver</driver-class> 
+    <driver-properties> 
+      <property name="user" value="root"/> 
+      <property name="password" value="951013xm"/> 
+    </driver-properties> 
+     <house-keeping-sleep-time>900000</house-keeping-sleep-time>
+	 <maximum-active-time>500000</maximum-active-time>
+	 <maximum-connection-count>100</maximum-connection-count>
+	 <minimum-connection-count>4</minimum-connection-count> 
+    <house-keeping-test-sql>select 1</house-keeping-test-sql>
+    <prop key="hibernate.connection.release_mode">after_transaction</prop>  
+    <simultaneous-build-throttle>100</simultaneous-build-throttle>
+</proxool> 
+</proxool-config>
